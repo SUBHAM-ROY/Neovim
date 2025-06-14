@@ -1,0 +1,13 @@
+vim.o.cursorline=true -- Show current line highlights
+vim.o.splitright=true -- Split vertical on right
+vim.o.splitbelow=true -- Split horizontal on bottom
+vim.o.scrolloff=10 -- Always Keep 10 lines below current line for context
+
+vim.o.expandtab = true       -- Convert tabs to spaces
+vim.o.shiftwidth = 4         -- Use 4 spaces for autoindent
+vim.o.tabstop = 4            -- Display tabs as 4 spaces
+vim.o.softtabstop = 4        -- Insert 4 spaces when you hit Tab
+vim.o.smartindent = true     -- Smart indenting
+vim.o.autoindent = true      -- Keep indent from current line
+vim.o.breakindent = true     -- Keep indent on wrapped lines
+
