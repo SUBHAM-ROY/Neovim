@@ -5,4 +5,7 @@ return {
     "sindrets/diffview.nvim",        -- optional - Diff integration
     "nvim-telescope/telescope.nvim", -- optional
   },
+    keys = {
+     { '<leader>G', ':Neogit<CR>', desc = 'Open Neogit Git UI' },
+  }
 }
