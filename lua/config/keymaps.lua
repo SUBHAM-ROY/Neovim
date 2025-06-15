@@ -1,1 +1,5 @@
-vim.keymap.set('n', '<Esc>', ':noh<CR><Esc>', { silent = true })
+local opts = { noremap = true, silent = true }
+
+vim.keymap.set('n', '<Esc>', ':noh<CR><Esc>', opts)
+vim.keymap.set({"n", "i"}, "<C-s>", "<Esc>:w<CR>a", opts)
+vim.keymap.set("n", "<leader>q", ":q<CR>", opts)
