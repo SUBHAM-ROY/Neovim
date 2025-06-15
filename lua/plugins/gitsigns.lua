@@ -2,6 +2,10 @@ return {
   "lewis6991/gitsigns.nvim",
   opts = {
     current_line_blame = true,
+    current_line_blame_opts = {
+        delay = 300,
+    },
+    current_line_blame_formatter = '<author>, <author_time:%R>, <abbrev_sha> - <summary>',
   },
   event = "VeryLazy",
   keys = {
@@ -13,4 +17,9 @@ return {
     { '<leader>Gs', ':Gitsigns stage_hunk<CR>', desc = 'Stage Git hunk' },
     { '<leader>Gu', ':Gitsigns undo_stage_hunk<CR>', desc = 'Unstage Git hunk' },
   },
+  init = function()
+    vim.cmd [[
+      highlight GitSignsCurrentLineBlame guifg=#928374 gui=italic
+    ]]
+  end,
 }
