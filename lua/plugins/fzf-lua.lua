@@ -3,7 +3,8 @@ return {
   dependencies = { "nvim-tree/nvim-web-devicons" },
   keys = {
     { "<leader><leader>", "<cmd>FzfLua files<cr>",        desc = "Fzf find files" },
-    { "<leader>c",        "<cmd>FzfLua commands<cr>",     desc = "Fzf commands" },
+    { "<leader>nv", "<cmd>FzfLua files cwd=~/.config/nvim<cr>",  desc = "Fzf find nvim config" },
+    { "<leader>fc",        "<cmd>FzfLua commands<cr>",     desc = "Fzf commands" },
     { "<leader>r",        "<cmd>FzfLua oldfiles<cr>",     desc = "Fzf recent files" },
     { "<leader>v",        "<cmd>FzfLua nvim_options<cr>",  desc = "Fzf vim options" },
     { "<leader>s",        "<cmd>FzfLua live_grep<cr>",    desc = "Fzf live grep" },
@@ -19,6 +20,18 @@ return {
     { "<leader><C-f>",       "<cmd>FzfLua grep_visual<cr>", desc = "Fzf grep word", mode = {'v'} },
     { "<leader>hc",       "<cmd>FzfLua command_history<cr>", desc = "Fzf command history" },
     { "<leader>hs",       "<cmd>FzfLua search_history<cr>", desc = "Fzf search history" },
+
+    ---------       LSP Keymaps       ----------------------------------------
+      { "<leader>cr", "<cmd>FzfLua lsp_references<cr>",        desc = "Fzf references" },
+      { "<leader>cd", "<cmd>FzfLua lsp_definitions<cr>",       desc = "Fzf definitions" },
+      { "<leader>cD", "<cmd>FzfLua lsp_declarations<cr>",      desc = "Fzf declarations" },
+      { "<leader>ci", "<cmd>FzfLua lsp_implementations<cr>",   desc = "Fzf implementations" },
+      { "<leader>ct", "<cmd>FzfLua lsp_typedefs<cr>",          desc = "Fzf type defs" },
+      { "<leader>cS", "<cmd>FzfLua lsp_document_symbols<cr>",  desc = "Fzf document symbols" },
+      { "<leader>cs", "<cmd>FzfLua lsp_workspace_symbols<cr>", desc = "Fzf workspace symbols" },
+      { "<leader>ca", "<cmd>FzfLua lsp_code_actions<cr>",      desc = "Fzf code actions" },
+      { "<leader>cX", "<cmd>FzfLua diagnostics_document<cr>",  desc = "Fzf document diagnostics" },
+      { "<leader>cx", "<cmd>FzfLua diagnostics_workspace<cr>", desc = "Fzf workspace diagnostics" },
   },
 }
 
