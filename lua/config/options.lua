@@ -17,3 +17,4 @@ vim.o.breakindent = true     -- Keep indent on wrapped lines
 vim.wo.foldmethod = 'expr'
 vim.wo.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
 vim.wo.foldenable = false
+vim.wo.foldlevel = 99
