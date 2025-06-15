@@ -6,6 +6,6 @@ return {
     "nvim-telescope/telescope.nvim", -- optional
   },
     keys = {
-     { '<leader>G', ':Neogit<CR>', desc = 'Open Neogit Git UI' },
+     { '<leader>ng', ':Neogit<CR>', desc = 'Open Neogit Git UI' },
   }
 }

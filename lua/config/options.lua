@@ -1,5 +1,6 @@
+vim.o.number = true -- Show line numbers
 vim.o.cursorline=true -- Show current line highlights
-vim.o.relativenumber=true -- Show relative numbers from current
+--vim.o.relativenumber=true -- Show relative numbers from current
 vim.o.splitright=true -- Split vertical on right
 vim.o.splitbelow=true -- Split horizontal on bottom
 vim.o.scrolloff=10 -- Always Keep 10 lines below current line for context
@@ -13,3 +14,6 @@ vim.o.smartindent = true     -- Smart indenting
 vim.o.autoindent = true      -- Keep indent from current line
 vim.o.breakindent = true     -- Keep indent on wrapped lines
 
+vim.wo.foldmethod = 'expr'
+vim.wo.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+vim.wo.foldenable = false

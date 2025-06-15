@@ -33,6 +33,3 @@ require("lazy").setup({
   -- automatically check for plugin updates
   checker = { enabled = true },
 })
-
--- Enable line numbers
-vim.opt.number = true 
