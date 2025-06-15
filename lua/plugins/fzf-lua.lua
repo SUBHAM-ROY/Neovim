@@ -5,7 +5,7 @@ return {
     { "<leader><leader>", "<cmd>FzfLua files<cr>",        desc = "Fzf find files" },
     { "<leader>c",        "<cmd>FzfLua commands<cr>",     desc = "Fzf commands" },
     { "<leader>r",        "<cmd>FzfLua oldfiles<cr>",     desc = "Fzf recent files" },
-    { "<leader>v",        "<cmd>FzfLua vim_options<cr>",  desc = "Fzf vim options" },
+    { "<leader>v",        "<cmd>FzfLua nvim_options<cr>",  desc = "Fzf vim options" },
     { "<leader>s",        "<cmd>FzfLua live_grep<cr>",    desc = "Fzf live grep" },
     { "<leader>fb",       "<cmd>FzfLua buffers<cr>",      desc = "Fzf buffers" },
     { "<leader>fh",       "<cmd>FzfLua help_tags<cr>",    desc = "Fzf help tags" },
