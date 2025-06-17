@@ -99,7 +99,7 @@ return {
 			desc = "Find Config File",
 		},
 		{
-			"<leader>fp",
+			"<leader>p",
 			function()
 				Snacks.picker.projects()
 			end,
@@ -366,6 +366,13 @@ return {
 				Snacks.picker.lsp_workspace_symbols()
 			end,
 			desc = "LSP Workspace Symbols",
+		},
+		{
+			"<leader>c.",
+			function()
+				vim.lsp.buf.code_action()
+			end,
+			desc = "Code actions",
 		},
 
 		-- Others

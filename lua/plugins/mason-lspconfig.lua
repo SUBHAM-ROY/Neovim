@@ -1,5 +1,6 @@
 return {
 	"mason-org/mason-lspconfig.nvim",
+	lazy = false,
 	opts = {
 		ensure_installed = {
 			"ts_ls",
@@ -9,6 +10,9 @@ return {
 	dependencies = {
 		{ "mason-org/mason.nvim", opts = {} },
 		"neovim/nvim-lspconfig",
+	},
+	keys = {
+		{ "<leader>M", "<cmd>Mason<cr>", desc = "Mason" },
 	},
 	init = function()
 		local icons = {
