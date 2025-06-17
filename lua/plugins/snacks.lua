@@ -15,6 +15,34 @@ return {
 		indent = { enabled = true },
 		terminal = { enabled = true },
 		scratch = { enabled = true },
+		notifier = { enabled = true },
+		dashboard = {
+			enabled = true,
+			preset = {
+				header = [[
+:'######::'##::::'##:'########::'##::::'##::::'###::::'##::::'##:
+'##... ##: ##:::: ##: ##.... ##: ##:::: ##:::'## ##::: ###::'###:
+ ##:::..:: ##:::: ##: ##:::: ##: ##:::: ##::'##:. ##:: ####'####:
+. ######:: ##:::: ##: ########:: #########:'##:::. ##: ## ### ##:
+:..... ##: ##:::: ##: ##.... ##: ##.... ##: #########: ##. #: ##:
+'##::: ##: ##:::: ##: ##:::: ##: ##:::: ##: ##.... ##: ##:.:: ##:
+. ######::. #######:: ########:: ##:::: ##: ##:::: ##: ##:::: ##:
+:......::::.......:::........:::..:::::..::..:::::..::..:::::..::]],
+			},
+			sections = {
+				{ section = "header" },
+				{ section = "keys", gap = 1, padding = 2 },
+				{
+					icon = " ",
+					title = "Recent Files",
+					section = "recent_files",
+					indent = 2,
+					padding = { 2, 1 },
+				},
+				{ icon = " ", title = "Projects", section = "projects", indent = 2, padding = { 2, 1 } },
+				{ section = "startup" },
+			},
+		},
 	},
 	keys = {
 		-- Top Pickers & Explorer
@@ -375,6 +403,13 @@ return {
 				Snacks.scratch.select()
 			end,
 			desc = "Select Scratch Buffer",
+		},
+		{
+			"<leader>h",
+			function()
+				Snacks.dashboard()
+			end,
+			desc = "Home screen",
 		},
 	},
 }
