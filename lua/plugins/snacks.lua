@@ -16,6 +16,7 @@ return {
 		terminal = { enabled = true },
 		scratch = { enabled = true },
 		notifier = { enabled = true },
+		statuscolumn = { enabled = true },
 		dashboard = {
 			enabled = true,
 			preset = {
@@ -31,7 +32,7 @@ return {
 			},
 			sections = {
 				{ section = "header" },
-				{ section = "keys", gap = 1, padding = 2 },
+				{ section = "keys", padding = 2 },
 				{
 					icon = " ",
 					title = "Recent Files",
