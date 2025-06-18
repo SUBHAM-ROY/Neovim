@@ -117,7 +117,7 @@ return {
 		{
 			"<leader>gb",
 			function()
-				Snacks.picker.git_branches()
+				Snacks.picker.git_branches({ all = true })
 			end,
 			desc = "Git Branches",
 		},
@@ -372,6 +372,7 @@ return {
 			function()
 				vim.lsp.buf.code_action()
 			end,
+			mode = { "n", "v" },
 			desc = "Code actions",
 		},
 
@@ -393,7 +394,7 @@ return {
 		{
 			"<C-`>",
 			function()
-				Snacks.terminal.toggle()
+				Snacks.terminal.toggle(nil, { win = { height = 0.2 } })
 			end,
 			desc = "Toggle Terminal",
 			mode = { "n", "t" },

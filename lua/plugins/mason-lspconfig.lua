@@ -5,6 +5,7 @@ return {
 		ensure_installed = {
 			"ts_ls",
 			"pyright",
+			"eslint",
 		},
 	},
 	dependencies = {
@@ -24,7 +25,7 @@ return {
 		vim.diagnostic.config({
 			virtual_text = {
 				prefix = function(diagnostic, _, _)
-					return icons[diagnostic.severity] or ""
+					return icons[diagnostic.severity] .. " "
 				end,
 			},
 			signs = {
